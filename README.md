@@ -9,13 +9,13 @@
 - [Question 6](#q6)
 - [Additional Notes](#additional-notes)
 
-#### <u>Q1</u> <a id="q1"></a>
+#### Q1 <a id="q1"></a>
 
 For each of the following quality attributes, provide a brief description and identify two measures that help promote it.
 - Modifiability
 - Availability
 
-#### <u>Q1 Answer</u>
+#### Q1 Answer
 
 **Modifiability**: The ability to modify code easily
 - Adhering to SOLID principles
@@ -37,15 +37,15 @@ For each of the following quality attributes, provide a brief description and id
 - Replication
   - Have multiple copies of the server on multiple machines; combine with a load balancer to connect clients to the "least busy" server
 
-#### <u>Q2</u> <a id="q2"></a>
+#### Q2 <a id="q2"></a>
 Draw the case diagram corresponding to the following description:
 
 *Consider a system that allows users to order books online. Users have the option to browse through a collection of books, place orders, and track their order status. During the ordering process, users can choose to pay through a credit card or Paypal. The system also offers administrators the functionality to manage the book collection. They can add, modify, or remove books from the collection. In addition, they can conduct book searches, which yield identical search results as those seen by users. However, admins have the option to edit or delete any of the books presented in the search results.*
 
-#### <u>Q2 Answer</u>
+#### Q2 Answer
 ![image](./images/use_case_diagram.jpg)
 
-#### <u>Q3</u> <a id="q3"></a>
+#### Q3 <a id="q3"></a>
 Draw the sequence diagram corresponding to method `withdraw`:
 ```java
 public class ATM {
@@ -61,10 +61,10 @@ public class ATM {
   }
 }
 ```
-#### <u>Q3 Answer</u>
+#### Q3 Answer
 ![image](./images/sequence_diagram.jpg)
 
-#### <u>Q4</u> <a id="q4"></a>
+#### Q4 <a id="q4"></a>
 Consider the following code:
 
 ```java
@@ -90,7 +90,7 @@ public static void main(String [] args){
 ```
 Find all the def-use pairs that are covered when running the code using the test case (a=2, b=1, c=3).
 
-#### <u>Q4 Answer</u>
+#### Q4 Answer
 **Note:** The standalone `else` is not a statement
 
 (c, s3, s4)
@@ -111,13 +111,13 @@ Find all the def-use pairs that are covered when running the code using the test
 
 (median, s9, s14)
 
-#### <u>Q5</u> <a id="q5"></a>
+#### Q5 <a id="q5"></a>
 Using the *zero-failure* testing model, determine the number of test hours needed to meet the goal of having no more than an average of 0.05 failure per 1000 lines of code. You can assume that:
 - The program being tested consists of 40000 lines of code
 - 12 failures have occurred so far over a total test time of 300 hours
 - No failures have been reported during the last 20 hours of testing
 
-#### <u>Q5 Answer</u>
+#### Q5 Answer
 Refer to Motorola's *Zero-Failure Testing*:
 
 Num of further test hours needed =
@@ -140,7 +140,7 @@ $\dfrac{\ln(\frac{2}{0.5 + 2})\cdot 280}{\ln(\frac{0.5 + 2}{12 + 2})} = 36.27$
 
 which can be rounded up to 37 hours.
 
-#### <u>Q6</u> <a id="q6"></a>
+#### Q6 <a id="q6"></a>
 The Surface-area-to-volume-ratio (denoted SA:V) is a practical concept that is employed in a variety of fields such physics and biology. Given an object with surface area s and volume v, the value of SA:V is simply s/v. The code below computes the SA:V of a cube and a ball, but it contains duplication regarding method `computeSurfaceAreaToVolumeRatio`. You are required to:
 1) Identify a design pattern that would help resolve this issue, and
 2) Re-implement the code accordingly.
@@ -185,7 +185,7 @@ class Ball{
   }
 }
 ```
-#### <u>Q6 Answer</u>
+#### Q6 Answer
 We have to make use of the Template Method design pattern to fix the duplication issue.
 The following code utilises this design pattern.
 ```java
@@ -236,7 +236,7 @@ class Ball extends ThreeDimensionalShape{
 }
 ```
 
-#### <u>Additional Notes</u> <a id="additional-notes"></a>
+#### Additional Notes <a id="additional-notes"></a>
 **Top down Integration Testing:**
 - Pros: Can be parallelized
 - Cons: Requires a lot of stubs
